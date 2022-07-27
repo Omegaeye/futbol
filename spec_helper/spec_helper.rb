@@ -1,1 +1,1 @@
-require './lib/stat_tracker'
+require_relative './lib/stat_tracker'

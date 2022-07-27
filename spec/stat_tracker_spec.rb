@@ -71,4 +71,16 @@ RSpec.describe StatTracker do
       expect(@stat_tracker.game_teams.first.instance_variables).to eq(expected_result)
     end
   end
+
+  describe ' #highest_total_score' do
+    it 'returns an interger of the highest from game.home_goals and game.away_goals' do
+      expect(@stat_tracker.highest_total_score).to eq(11)
+    end
+  end
+
+  describe ' #lowest_total_score' do
+    it 'returns an interger of the highest from game.home_goals and game.away_goals' do
+      expect(@stat_tracker.highest_total_score).to eq(0)
+    end
+  end
 end
